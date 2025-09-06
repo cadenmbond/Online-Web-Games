@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+@keyframes shadow-pulse
+{
+    0%
+    {
+        text-shadow: 10px 10px 50px #8576af;
+    }
+    50%
+    {
+        text-shadow: 10px 10px 50px #473b6a;
+    }
+    100%
+    {
+        text-shadow: 10px 10px 50px #7b6ca3;
+    }
+}
+
+@keyframes games-text-pulse
+{
+    0%
+    {
+        color: white;
+    }
+    50%
+    {
+        color: rgb(212, 196, 239);
+    }
+    100%
+    {
+        color: #ffffff;
+    }
+}
+
+@keyframes games-text-shadow-pulse
+{
+    0%
+    {
+        text-shadow: 5px 5px 10px white;
+    }
+    50%
+    {
+        text-shadow: 5px 5px 10px rgb(212, 196, 239);
+    }
+    100%
+    {
+        text-shadow: 5px 5px 10px white;
+    }
+}
+
+body{
+    background-color: #6a658f;
+    margin: 0;
+    padding: 0;
+}
+
+#games-hr
+{
+    width: 1250px;
+    height: 8px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 80px;
+    border-style: outset;
+    box-shadow: 1px 1px 20px white;
+}
+
+#header-container {
+    width: 100%;
+    height: 70px;
+    padding-top: 1px;
+    background-color: #403D58;
+    display: flex;
+    align-items: center;
+}
+
+#header-container h1 {
+    color: #66D7D1;
+    padding-left: 10px;
+    font-size: 30px;
+    text-shadow: #282638 5px 5px 10px;
+    font-family: "Jersey 15";
+    font-size: 40px;
+}
+
+#header-container a
+{
+    text-decoration-color: #66d7d1;
+}
+
+#header-right
+{
+    margin-right: 10px;
+    position: absolute;
+    right: 0;
+}
+
+#header-right button, .filter-button
+{
+    background-color: #FC6136;
+    height: 35px;
+    width: 150px;
+    font-size: 20px;
+    font-family: "Red Hat Display";
+    transition: background-color 0.25s ease, transform 0.25s ease;
+    box-shadow: #282638 5px 5px 10px;
+    margin-left: 10px;
+}
+
+#header-right button:hover
+{
+    background-color: #DBD56E;
+    transform: scale(1.1);
+}
+
+.game-selector img
+{
+    width:256px;
+    height: 256px;
+    border:#403D58 solid 3px;
+    border-radius: 10px;
+    box-shadow: #383145 5px 5px 20px;
+}
+
+.game-selector h3
+{
+    margin: 0;
+    color: #403D58;
+    font-size: 30px;
+    transition: color 0.25s ease, text-shadow 0.25s ease;
+    text-shadow: #403D58 5px 5px 10px;
+}
+
+.game-selector h3:hover
+{
+    color: #F2EFEA;
+    text-shadow: white 0px 20px 4px;
+}
+
+.game-selector a
+{
+    text-decoration: none;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 20px;
+}
+
+.game-selector {
+    width: 400px;
+    height: 320px;
+    
+    font-family: "Red Hat Display";
+    
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    
+    text-align: center;
+    
+    background-color: #b0a1c7;
+    border: #6d618e solid 4px;
+    border-radius: 20px;
+    
+    box-shadow: 5px 5px 40px #cdc7fa;
+    
+    transition: transform 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.game-selector:nth-child(3n) {
+    margin-right: 0; 
+}
+
+
+
+#game-frame
+{
+    border-radius: 10px;
+    border: 5px solid #6d618e;
+    box-shadow: 0px 0px 50px #afa6e8;
+}
+
+.game-selector:hover
+{
+    transform: scale(1.08);
+    background-color: #FC6136;
+    border-color: #d8542f;
+    color: #a8a456;
+}
+
+#game-container
+{
+    text-align:center;
+    margin: 0 auto; 
+    margin-top: 20px;
+    width:90%; 
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #282638;
+    border-radius: 20px;
+    border: dotted #403D58 5px;
+    box-shadow: 0px 0px 60px #1d1c27;
+}
+
+#about-container
+{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    background-color: rgba(237, 237, 237, 0.122);
+    padding: 30px;
+    padding-top: 5px;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-family: "Red Hat Display";
+    box-shadow: 10px 10px 40px #282638;
+    border: dotted #2e2c40 5px;
+}
+
+#filter-container
+{    
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    background-color: #464263;
+    padding: 30px;
+    padding-top: 5px;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-family: "Red Hat Display";
+    box-shadow: 10px 10px 40px #282638;
+    border: dotted #2e2c40 5px;
+}
+
+.filter-button
+{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    background-color: #d48e54;
+    padding: 30px;
+    padding-top: 5px;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-family: "Red Hat Display";
+    box-shadow: 10px 10px 40px #282638;
+}
+
+#filter-basketball:hover
+{
+    background-color: #af6b34;
+}
+
+#filter-cars
+{
+    background-color: rgb(31, 31, 31);
+    color: yellow;
+    border: 3px dotted white;
+    text-decoration: underline;
+}
+
+#filter-cars:hover
+{
+    background-color: #01a901;
+    border-color: #006103;
+    color: white;
+}
+
+#about-title
+{
+    text-decoration: underline;
+    font-size: 25px;
+    color: white;
+    text-shadow: 5px  5px 20px #232131;
+}
+
+#about-container hr
+{
+    height: 2px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: #282638 5px 5px 10px;
+}
+
+.highlight
+{
+    color: #66d7d1;
+}
+
+.about-link
+{
+    color:#DBD56E;
+    transition: 0.15s color ease, font-size 0.15s ease, text-shadow 0.15s ease;
+}
+
+.about-link:hover
+{
+    color:#eaf42e;
+    font-size: 15px;
+    text-shadow: 3px 3px 10px #DBD56E;
+}
+
+.about-info
+{
+    color: whitesmoke;
+}
+
+.shorter
+{
+    color: white;
+    font-size: 13px;
+}
+
+#inside-game-title
+{
+    text-align: left;
+    margin-left: 50px;
+    color: #FC6136;
+    font-family: "Jersey 15";
+    letter-spacing: 2px;
+    font-size: 25px;
+    margin-top: 0;
+    margin-top: 10px;
+}
+
+#game-description
+{
+    text-align: left;
+    margin-left: 50px;
+    color: #f87550;
+    font-family: "Jersey 15";
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin-top: 0;
+    margin-top: 10px;
+    margin-right: 50px
+}
+
+#game-controls
+{
+    text-align: left;
+    margin-left: 50px;
+    color: #DBD56E;
+    font-family: "Jersey 15";
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin-top: 0;
+    margin-top: 10px;
+    margin-right: 50px
+}
+
+#container-title
+{
+    animation: infinite ease 4s games-text-pulse, infinite ease 4s games-text-shadow-pulse;
+    font-family: "Red Hat Display";
+    text-align: center;
+    font-size: 30px;
+    text-shadow: white 5px 5px 10px;
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
