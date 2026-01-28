@@ -62,18 +62,18 @@ body {
 .game-selector {
     width: 400px;
     height: 300px;
-    background: linear-gradient(to bottom, #f5f9ff, #dbe9f9);
+    background: #f5f9ff;
     border: 1px solid #9bb8d4;
     text-align: center;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
-    transition: transform 0.2s ease, background 0.2s ease;
+    transition: transform 0.2s ease, background-color 0.2s ease;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .game-selector:hover {
     transform: scale(1.03);
-    background: linear-gradient(to bottom, #e0efff, #c0d4ea);
+    background-color: #c0d4ea;
 }
 
 .game-selector img {
